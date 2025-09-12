@@ -6,55 +6,6 @@ from keras import layers, models, optimizers, losses, regularizers
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-# def getModels():
-#     model_list = []
-#     # model_list.append(models.Sequential([layers.Dense(25, activation = "relu"),
-#     #                                     layers.Dense(15, activation="relu"),
-#     #                                     layers.Dense(10, activation="linear")])
-#     # )
-#     # model_list.append(models.Sequential([layers.Dense(25, activation="relu"),
-#     #                                     layers.Dense(10, activation="linear")])
-#     # )
-#     # model_list.append(models.Sequential([layers.Dense(10, activation="linear")]))
-#     # model_list.append(models.Sequential([layers.Dense(256, activation="relu"),
-#     #                                     layers.Dense(128, activation="relu"),
-#     #                                     layers.Dense(10, activation="linear")])
-#     # )
-    
-#     # model_list.append(models.Sequential([layers.Dense(256, activation="relu"),
-#     #                                      layers.Dropout(0.1),
-#     #                                      layers.Dense(128, activation="relu"),
-#     #                                      layers.Dropout(0.1),
-#     #                                      layers.Dense(10, activation="linear")]))
-    
-#     # model_list.append(models.Sequential([layers.Dense(256, activation="relu"),
-#     #                                      layers.Dropout(0.1),
-#     #                                      layers.Dense(128, activation="relu"),
-#     #                                      layers.Dropout(0.1),
-#     #                                      layers.Dense(64, activation = "relu"),
-#     #                                      layers.Dropout(0.1),
-#     #                                      layers.Dense(10, activation="linear")]))
-    
-#     # model_list.append(models.Sequential([layers.Dense(128, activation="relu"),
-#     #                                     layers.Dense(128, activation="relu"),
-#     #                                     layers.Dense(64, activation="relu"),
-#     #                                     layers.Dense(64, activation="relu"),
-#     #                                     layers.Dense(10, activation="linear")])
-#     # )
-#     model_list.append(models.Sequential([layers.Dense(512, activation="relu"),
-#                                         layers.Dropout(0.1),
-#                                         layers.Dense(256, activation="relu"),
-#                                         layers.Dropout(0.1),
-#                                         layers.Dense(128, activation="relu"),
-#                                         layers.Dropout(0.1),
-#                                         layers.Dense(10, activation="linear")])
-#     )
-#     return(model_list)
-    
-    
-    
-
 model = models.Sequential([layers.Dense(512, activation="relu"),
                                         layers.Dropout(0.1),
                                         layers.Dense(256, activation="relu"),
